@@ -118,7 +118,7 @@ const EmployeeLogin = () => {
           title="a3"
         ></iframe>
       </div>
-      <Modal
+{  localData&&    <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
@@ -165,7 +165,7 @@ const EmployeeLogin = () => {
         <button className="btn btn-success" onClick={handleApplyLeave}>
           Apply
         </button>
-      </Modal>
+      </Modal>}
       {localData && 
       <Modal
         isOpen={usermodalIsOpen}
